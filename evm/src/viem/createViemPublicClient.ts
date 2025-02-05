@@ -1,5 +1,5 @@
 import { createPublicClient, http } from "viem";
-import { avalancheFuji } from "viem/chains";
+import { ChainId } from "./chain.ts";
 
 /**
  * Creates a new public Viem client connected to the Avalanche Fuji testnet.
@@ -16,7 +16,7 @@ export function createViemPublicClient() {
      *
      * In this case, we're using the Avalanche Fuji testnet.
      */
-    chain: avalancheFuji,
+    chain: ChainId,
 
     /**
      * The transport to use for HTTP requests.
